@@ -1,0 +1,148 @@
+.container{
+    position: relative;
+    padding: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+.container::after{
+    position: absolute;
+    content: '';
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%);
+}
+
+form{
+    padding: 2rem;
+    position: relative;
+    width: 500px;
+}
+h2{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+label{
+    text-transform: uppercase;
+    color: white;
+}
+
+input{
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: .5rem 0;
+}
+input[type="submit"]{
+    background: white;
+    color: #111;
+    width: 90%;
+    padding: 1px 10px;
+    box-shadow: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+input[type="submit"]:hover,
+.btn:hover, .delete_btn:hover{
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.10), rgba(255, 255, 255, 0.25));
+    color: white;
+    transition: .5s;
+}
+p{
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    padding-left: .5rem;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: red;
+}
+
+/* Home */
+.content{
+    height: 60vh;
+    width: 500px;
+}
+
+.content .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 97%;
+    height: 97%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.content .box h3{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.content .box h3 span{
+    color: crimson;
+}
+
+.content .box .flex_btn{
+    display: flex;
+    gap: 10px;
+}
+
+.content .box .btn .delete_btn{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    padding: .8rem, 2.5rem;
+
+}
+
+.content .box .btn:hover{
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.10), rgba(255, 255, 255, 0.25));
+    color: white;
+    transition: .5s;
+}
+
+.delete_btn{
+    width: 58%;
+}
